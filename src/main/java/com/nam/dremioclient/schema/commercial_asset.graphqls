@@ -1,0 +1,21 @@
+type CommercialAsset {
+assetId: ID!,
+accountId: Int,
+siteId: String,
+groupId: Int
+warrantyCode: String
+expiryDate: String
+sacVersion: String
+region: String
+age: String
+prodLob: String
+prodLine: String
+osName: String
+modelNumber: String
+error: String
+}
+
+type Query {
+CommercialAssets:[CommercialAsset]
+CommercialAsset(id: ID):CommercialAsset
+}

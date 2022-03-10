@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "ba7b0414-e353-46a4-9cf0-568194ed5073",
+		"name": "GraphQL - Postman collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/graphql",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    CommercialAsset(id: \"BXPZ8N2\"){\r\n        assetId\r\n        accountId\r\n        sacVersion\r\n        region\r\n        age\r\n        osName\r\n        modelNumber\r\n        error\r\n    }\r\n}    ",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/graphql",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/graphql",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    CommercialAssets{\r\n        assetId\r\n        accountId\r\n        sacVersion\r\n        region\r\n        age\r\n        osName\r\n        modelNumber\r\n    }\r\n}    ",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/graphql",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

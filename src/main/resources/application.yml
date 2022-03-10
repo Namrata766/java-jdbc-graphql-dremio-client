@@ -1,0 +1,4 @@
+dremio:
+  url: <DREMIO_URL>
+  username: <DREMIO_USER>
+  password: <DREMIO_USER_PASSWORD>
